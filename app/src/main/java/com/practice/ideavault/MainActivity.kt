@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
 
         val email = sharedPreferences.getString(keyEmail,null)
         if(email == null && acct == null){
-            signOut()
             loadFragment(SigningInFragment.newInstance())
         }else{
             makeToast(this,"Welcome back ${getLoggedInUserName()}!")
