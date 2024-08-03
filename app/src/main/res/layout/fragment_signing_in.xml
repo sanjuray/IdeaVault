@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        tools:context=".fragment.sign_in.SigningInFragment"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/tvAppNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Idea Vault"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAppTagLineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:text="Safe-Keeping your Wildest Thoughts"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/app_logo"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:textSize="18sp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:drawablePadding="12dp"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/google_logo"/>
+
+
+    </LinearLayout>
+</layout>
